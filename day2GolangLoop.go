@@ -12,8 +12,20 @@ func forLoop() {
 	}
 }
 
+func forLoopBreak() {
+	for j := 0; j <= 100; j++ {
+		if j == 5 {
+			continue
+		} else if j == 10 {
+			break
+		}
+		fmt.Println(j)
+	}
+}
+
 func main() {
 	init1()
 	fmt.Println("Hello GOLANG Loop...")
-	forLoop()
+	// forLoop()
+	forLoopBreak()
 }

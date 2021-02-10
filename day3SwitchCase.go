@@ -7,6 +7,7 @@ import (
 // switchCase type 1 is no Break different other language
 func switchCasetype1() {
 	i := 5
+	fmt.Println("Write", i, "to")
 	switch i {
 	case 1:
 		fmt.Println("Hello 1")

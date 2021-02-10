@@ -112,8 +112,8 @@ func main() {
 	fmt.Println("Hello GOLANG Loop...")
 	// forLoop()
 	// forLoopBreak()
-	// whileInGoLang()
+	whileInGoLang()
 	// whileInGoLangIfEleseContinueBreak()
 	// doWhileLoop_1()
-	doWhileLoop_2()
+	// doWhileLoop_2()
 }

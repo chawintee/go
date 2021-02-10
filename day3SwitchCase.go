@@ -24,6 +24,7 @@ func switchCasetype1() {
 	default:
 		fmt.Println(i, "not number in case")
 	}
+	println("-------------------------------------------------------")
 }
 
 func switchCaseType2() {
@@ -48,13 +49,32 @@ func switchCaseType2() {
 		fmt.Print("zero ")
 		fallthrough
 	default:
-		fmt.Print("Go!!!")
+		fmt.Println("Go!!!")
 	}
+	println("-------------------------------------------------------")
+}
+
+func switchCaseTestDefault() {
+	k := 88
+	switch k {
+	case 86:
+		fmt.Print(k, "as eightysix")
+	case 87:
+		fmt.Print(k, "as eightyseven")
+	case 89:
+		fmt.Print(k, "as eightynine")
+	case 90:
+		fmt.Print(k, "as ninety")
+	default:
+		fmt.Println(k, "as eightyeight")
+	}
+	println("-------------------------------------------------------")
 }
 
 func main() {
 	fmt.Println("Hello Day3 Golang SwitchCase")
+	println("-------------------------------------------------------")
 	switchCasetype1()
 	switchCaseType2()
-
+	switchCaseTestDefault()
 }

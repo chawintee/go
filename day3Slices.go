@@ -24,6 +24,10 @@ func sampleSlices() {
 	fmt.Println("append2 : ", s)
 	fmt.Println("lenOfSAfterAppend2 : ", len(s))
 
+	c := make([]string, len(s))
+	fmt.Println("empty c : ", c)
+	copy(c, s)
+	fmt.Println("c copy from s : ", c)
 }
 
 func main() {

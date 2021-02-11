@@ -29,6 +29,7 @@ func sampleArrayInt() {
 	println("-------------------------------------------------------")
 	d := [8]int{0, 1, 2, 3, 4, 5, 6, 7}
 	fmt.Println("dcl:", d)
+	fmt.Println("len d:", len(d))
 
 	var twoD [2][3]int
 	for i := 0; i < 2; i++ {
